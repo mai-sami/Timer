@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>TIMER</title>
+</head>
+<body>
+     <main>
+        <div class="container contant">
+          <nav>
+            <ul>
+              <li class="active" data-tabs="stopWatch">Stop Watch</li>
+              <li data-tabs="timer">TIMER</li>
+            </ul>
+          </nav>
+          <!-- start STOPWATCH -->
+          <div id="stopWatch" class="content  ">
+            <h2>STOPWATCH</h2>
+            <div class="time">
+              <h2 id="sec">00s</h2>
+              <h5 id="part__of__sec">00ms</h5>
+            </div>
+            <div class="all_button">
+              <button class="starts" id="start">Start</button>
+              <button class="stops" id="stop">Stop</button>
+              <button  class="rests" id="reset">Reset</button>
+            </div>
+          </div>
+  
+          <!-- start TIMER -->
+          <div id="timer" class="content active">
+            <div id="timer__div" class="timer__div">
+                <input id="minutes" placeholder="minutes" type="text" value="5" />
+               <input id="Seconds" placeholder="minutes" type="text" value="0" />
+            </div>
+            <div class="time">
+              <h2 id="showminutes">00m</h2>
+              <h5 id="showSeconds">00s</h5>
+            </div>
+            <div>
+              <button class="starts" id="startTimer">Start Timer</button>
+              <button class="stops" id="stopTimer">Stop Timer</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
